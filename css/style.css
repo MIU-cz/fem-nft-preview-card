@@ -31,7 +31,7 @@ body {
 
 .container {
 	width: 100%;
-	padding-top: 25%;
+	padding-top: 15%;
 }
 .content {
 	width: var(--Size-view);
