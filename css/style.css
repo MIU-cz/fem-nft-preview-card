@@ -68,7 +68,7 @@ body {
 	height: var(--Size-view);
 	border-radius: 10px;
 	background-color: var(--Cyan);
-	opacity: 45%;
+	opacity: 0.5;
 }
 
 .view > img {
@@ -79,6 +79,7 @@ body {
 
 .content-img > img:hover + .view {
 	display: block;
+	cursor: pointer;
 }
 
 .content-txt {
@@ -89,6 +90,11 @@ body {
 	font-size: var(--Font-size);
 	color: var(--White);
 }
+h1:hover {
+	cursor: pointer;
+	color: var(--Cyan);
+}
+
 .content-txt > p {
 	margin-top: 20px;
 	color: var(--Soft-blue);
