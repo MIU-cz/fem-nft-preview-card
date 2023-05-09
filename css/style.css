@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+	/* ### Primary */
+	--Soft-blue: hsl(215, 51%, 70%);
+	--Cyan: hsl(178, 100%, 50%);
+	/* ### Neutral */
+	--Main-BG: hsl(217, 54%, 11%);
+	--Card-BG: hsl(216, 50%, 16%);
+	--Line: hsl(215, 32%, 27%);
+	--White: hsl(0, 0%, 100%);
+	/* ### Font */
+	--Font-family: "Roboto", sans-serif;
+	--Font-size: 18px; /*  (paragraph)*/
+	--W300: 300;
+	--W400: 400;
+	--W600: 600;
+	/* main size view*/
+	--Size-view: 285px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--Font-family);
+	background-color: var(--Main-BG);
+}
+
+.container {
+	width: 100%;
+	padding-top: 25%;
+}
+.content {
+	width: var(--Size-view);
+	background-color: var(--Card-BG);
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+	/* box-shadow: 0 0 50px var(--Card-BG); */
+}
+
+.content-img {
+	position: relative;
+}
+
+.content-img > img {
+	width: var(--Size-view);
+	height: var(--Size-view);
+	border-radius: 10px;
+}
+.view {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--Size-view);
+	height: var(--Size-view);
+	display: none;
+}
+
+.hiden {
+	position: absolute;
+	/* top: 0; */
+	/* left: 0; */
+	width: var(--Size-view);
+	height: var(--Size-view);
+	border-radius: 10px;
+	background-color: var(--Cyan);
+	opacity: 45%;
+}
+
+.view > img {
+	position: absolute;
+	top: 42.5%;
+	left: 42.5%;
+}
+
+.content-img > img:hover + .view {
+	display: block;
+}
+
+.content-txt {
+	padding: 20px 0;
+}
+.content-txt > h1 {
+	font-weight: var(--W600);
+	font-size: var(--Font-size);
+	color: var(--White);
+}
+.content-txt > p {
+	margin-top: 20px;
+	color: var(--Soft-blue);
+}
+
+.etf-clock {
+	padding-bottom: 20px;
+}
+.content-etf {
+	color: var(--Cyan);
+	float: left;
+}
+
+.content-etf > img {
+	float: left;
+	margin-right: 7px;
+}
+
+.content-clock {
+	color: var(--Soft-blue);
+	float: right;
+}
+
+.content-clock > img {
+	float: left;
+	margin-right: 7px;
+}
+
+.content-autor {
+	margin-top: 20px;
+	padding: 20px 0;
+	border-top: solid 1px var(--Line);
+	color: var(--Soft-blue);
+}
+
+.content-autor > img {
+	width: 32px;
+	border: solid 1px var(--White);
+	border-radius: 16px;
+	float: left;
+	margin-right: 15px;
+}
+
+.content-autor p {
+	padding-top: 10px;
+}
+
+.content-autor strong {
+	color: var(--White);
+}
+
+.attribution {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
